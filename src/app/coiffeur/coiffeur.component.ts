@@ -1,9 +1,10 @@
 import { Component } from '@angular/core';
+import { RouterOutlet } from '@angular/router';
 
 @Component({
   selector: 'app-coiffeur',
   standalone: true,
-  imports: [],
+  imports: [RouterOutlet],
   templateUrl: './coiffeur.component.html',
   styleUrl: './coiffeur.component.css'
 })
