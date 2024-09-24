@@ -1,1 +1,38 @@
-<p>connexion works!</p>
+
+<div class="container-fluid box">
+
+    <div class="row">
+        <div class="col-lg-12 child1">
+            <img src="./assets/images/salon2.webp" class="rounded-circle" alt="Description de l'image" width="80px" height="80px">
+        </div>
+        <div class="col-lg-12 child2">
+            <h2>Centre de beauté</h2>
+            <p>Trouver le salon qui vous convient le mieux</p>
+        </div>
+        <div class="col-md-12 col-lg-6 child3">
+            <form action="" [formGroup]="data" (ngSubmit)="validation($event)">
+
+                <div class="mb-4">
+                    <input type="email" class="form-control form-control-lg" id="exampleFormControlInput1" placeholder="email"  formControlName="email"  >
+                    
+                </div>
+
+                <div class="mb-4">
+                    <input type="password" class="form-control form-control-lg" id="exampleFormControlInput1"  placeholder="mot de pass" formControlName="password" >
+                    <div class="oublier"><p>mot de pass oublier?</p></div>
+                </div>
+
+                <div class="d-grid gap-2 col-8 mx-auto child4">
+                    <button type="submit" class="btn btn-success">se connecter</button>
+                </div>
+
+            </form>
+            <div class="col-lg-12 child2">
+              
+                <p>vous ête nouveau ici ? <span><a [routerLink]="['/client/inscription']" >Rejoignez nous maitenamt</a></span></p>
+            </div>
+        </div>
+    </div>
+
+</div>
+
