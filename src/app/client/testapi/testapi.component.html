@@ -1,0 +1,23 @@
+<p>testapi works!</p>
+<!-- <div *ngIf="data">
+    {{data|json}}
+</div> -->
+
+
+
+<div class="card" *ngIf="data.length">
+    <p-galleria
+      [value]="data"
+      [responsiveOptions]="responsiveOptions"
+      [containerStyle]="{ 'max-width': '640px' }"
+      [numVisible]="5">
+      <ng-template pTemplate="item" let-item>
+        <img [src]="item.url" style="width: 100%;" />
+      </ng-template>
+      <ng-template pTemplate="thumbnail" let-item>
+        <div class="grid grid-nogutter justify-content-center">
+          <img [src]="item.url" style="width: 100px;" />  <!-- Taille de la miniature -->
+        </div>
+      </ng-template>
+    </p-galleria>
+  </div>

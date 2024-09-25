@@ -1,1 +1,57 @@
-<p>inscription works!</p>
+
+<div class="container-fluid box">
+
+    <div class="row">
+        <div class="col-lg-12 child1">
+            <img src="./assets/images/salon2.webp" class="rounded-circle" alt="Description de l'image" width="80px" height="80px">
+        </div>
+        <div class="col-lg-12 child2">
+            <h2>Centre de beauté</h2>
+            <p>Inscrivez vous en tant que coiffeur</p>
+        </div>
+        <div class="col-md-12 col-lg-6 child3">
+            <form action="" [formGroup]="data" (ngSubmit)="validation($event)">
+
+                <div class="mb-3">
+                    <input type="text" class="form-control " id="exampleFormControlInput1" placeholder="votre nom"  formControlName="nom"  >
+                </div>
+
+                <div class="mb-3">
+                    <input type="email" class="form-control " id="exampleFormControlInput1" placeholder="email"  formControlName="email"  >
+                </div> 
+
+                <div class="mb-3">
+                    <input type="text" class="form-control " id="exampleFormControlInput1" placeholder="votre contact"  formControlName="contact"  >
+                </div>
+                <div class="mb-3">
+                    <input type="hidden" class="form-control " id="exampleFormControlInput1" placeholder="longitude"  formControlName="longitude"  >
+                </div>
+
+                <div class="mb-3">
+                    <input type="hidden" class="form-control " id="exampleFormControlInput1" placeholder="altitude"  formControlName="altitude">
+                </div>
+                <div class="mb-3">
+                    <input type="text" class="form-control " id="exampleFormControlInput1" placeholder="comune"  formControlName="comune">
+                </div>
+
+                <div class="mb-3">
+                    <input type="password" class="form-control " id="exampleFormControlInput1"  placeholder="mot de pass" formControlName="password" >
+                   
+                </div>
+
+                <div class="d-grid gap-mb-4 col-8 mx-auto child4">
+                    <button type="submit" class="btn btn-success">s'inscrit</button>
+                </div>
+
+            </form>
+            <div class="col-lg-12 child2">
+              
+                <p><strong>Nb:</strong> <span style="color: red;"> Chaque coiffeur doit s'inscrire avec l'adresse de son salon afin que 
+                    nous puissions obtenir la localisation précise de son établissement.</span></p>
+            </div>
+        </div>
+    </div>
+
+</div>
+
+
